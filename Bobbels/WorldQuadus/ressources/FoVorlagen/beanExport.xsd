@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Mit XMLSpy v2012 rel. 2 (x64) (http://www.altova.com) von Oliver Röttger (Condition GmbH) bearbeitet -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="waffen">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="waffe" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="laufendeNummer" type="xs:short" maxOccurs="unbounded"/>
+							<xs:element name="ueberlasser" type="xs:string" maxOccurs="unbounded"/>
+							<xs:element name="ueberlasserAdresse" type="xs:string" maxOccurs="unbounded"/>
+							<xs:element name="eingang" type="xs:string" maxOccurs="unbounded"/>
+							<xs:element name="seriennummer1" type="xs:string" maxOccurs="unbounded"/>
+							<xs:element name="waffentypFeingliederung" type="xs:string" maxOccurs="unbounded"/>
+							<xs:element name="hersteller" type="xs:string" maxOccurs="unbounded"/>
+							<xs:element name="kaliber" type="xs:string" maxOccurs="unbounded"/>
+							<xs:element name="empfaenger" type="xs:string" maxOccurs="unbounded"/>
+							<xs:element name="empfaengerAdresse" type="xs:string" maxOccurs="unbounded"/>
+							<xs:element name="abgang" type="xs:string" maxOccurs="unbounded"/>
+							<xs:element name="nachweis" type="xs:string" maxOccurs="unbounded"/>
+							<xs:element name="nachweisNummer" type="xs:string" maxOccurs="unbounded"/>
+							<xs:element name="nachweisDatumAusstellung" type="xs:string" maxOccurs="unbounded"/>
+							<xs:element name="nachweisBehoerde" type="xs:string" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="datum" type="xs:string" use="required"/>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
